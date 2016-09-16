@@ -6,8 +6,22 @@ function main() {
     var oneDay = 1000 * 60 * 60 * 24;
     var daysSince = ((today.getTime() - dayZero.getTime()) / oneDay)| 0;
     daysSinceElem.appendChild(document.createTextNode(daysSince));
-    number.appendChild(document.createTextNode(pow2(daysSince)));
+    number.appendChild(document.createTextNode(spaceDigits(pow2(daysSince).toString(), 3)));
 };
+
+function spaceDigits(s, n) {
+    var a = '';
+    var count = 0;
+    for (var i = s.length - 1; i >= 0; --i) {
+        if (count == n) {
+            a = ' ' + a;
+            count = 0;
+        }
+        a = s.charAt(i) + a;
+        count++;
+    }
+    return a;
+}
 
 function pow2(n) {
     var a = BigNum(1);

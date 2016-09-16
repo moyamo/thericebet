@@ -3,17 +3,25 @@
   <head>
     <title>The Legendry Rice Bet</title>
     <script src="thericebet.js"></script>
+    <link rel="stylesheet" type="text/css" href="thericebet.css">
   </head>
   <body onload="main();">
-    <div id="occurParagraph">
-      It has been <span id="daysSince"></span> days since the bet
-      occured.
-    </div>
-    
-    <div id="oweParagraph">
-      If an fully AI piloted flight were to occur now. Andrew would owe David
-      <span id="number" ></span>
-      grains of rice.
-    </div>
+    <table class="align-centre">
+      <tr>
+        <td>
+          <div id="everything">
+            
+            <div id="oweParagraph">
+              If a flight piloted by piloted only by an AI were to occur now. Andrew would owe David
+              <span id="number" ></span>
+              grains of rice.
+            </div>
+            <div id="occurParagraph">
+              The bet was made <span id="daysSince"></span> days ago.
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

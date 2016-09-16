@@ -1,0 +1,34 @@
+html {
+    height: 100%;
+}
+body {
+    background-image: url(background.jpg);
+    height: 100%;
+}
+#everything {
+    width: 100%;
+    font-size: 24pt;
+    font-family: sans-serif;
+    align-text: center;
+    line-height: 1.8;
+    max-width: 33em;
+    margin: 0 auto;
+}
+#daysSince {
+    font-size: 80pt;
+    display: block;
+    line-height: 1.2;
+}
+#oweParagraph {
+    margin-bottom: 3em;
+}
+#number {
+    display: block;
+    font-size:80pt;
+    line-height: 1.2;
+}
+.align-centre {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
