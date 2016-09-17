@@ -2,7 +2,7 @@ function main() {
     var number = document.getElementById('number');
     var daysSinceElem = document.getElementById('daysSince');
     var today = new Date();
-    var dayZero = new Date(2016, 07, 5, 21, 00); // I think it happened at about 9 o clock
+    var dayZero = new Date(2016, 6, 6); // I think it happened at about 9 o clock on the 6 July 2016. Months are indexed from 0 for some reason.
     var oneDay = 1000 * 60 * 60 * 24;
     var daysSince = ((today.getTime() - dayZero.getTime()) / oneDay)| 0;
     daysSinceElem.appendChild(document.createTextNode(daysSince));
